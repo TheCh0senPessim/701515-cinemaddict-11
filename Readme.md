@@ -1,7 +1,7 @@
 # Личный проект «Киноман» [![Build status][travis-image]][travis-url]
 
 * Студент: [Никита Макаров](https://up.htmlacademy.ru/ecmascript/11/user/701515).
-* Наставник: `Неизвестно`.
+* Наставник: [Станислав Ключников](https://htmlacademy.ru/profile/id311041).
 
 ---
 
