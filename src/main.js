@@ -287,10 +287,10 @@ for (let i = 0; i < MOVIES_COUNT; i++) {
 render(moviesList, createShowMoreButtonTemplate());
 
 for (let i = 0; i < moviesListExtra.length; i++) {
-  let extraFilmsContainer = moviesListExtra[i].querySelector(`.films-list__container`)
+  let extraFilmsContainer = moviesListExtra[i].querySelector(`.films-list__container`);
   for (let j = 0; j < MOVIES_EXTRA_COUNT; j++) {
     render(extraFilmsContainer, createMovieCardTemplate());
   }
 }
 
-render(siteMainElement, createMovieDetailsPopupTemplate())
+render(siteMainElement, createMovieDetailsPopupTemplate());
