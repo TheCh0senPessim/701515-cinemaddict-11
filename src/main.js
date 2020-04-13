@@ -1,3 +1,10 @@
+import {createSiteMenuTemplate} from "./components/site-menu.js";
+import {createUserRankTemplate} from "./components/user-rank.js";
+import {createCatalogTemplate} from "./components/catalog.js";
+import {createMovieCardTemplate} from "./components/movie-card.js";
+import {createShowMoreButtonTemplate} from "./components/show-more-button.js";
+import {createMovieDetailsPopupTemplate} from "./components/movie-details.js";
+
 const MOVIES_COUNT = 5;
 const MOVIES_EXTRA_COUNT = 2;
 
