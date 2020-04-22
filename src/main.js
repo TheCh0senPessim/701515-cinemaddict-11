@@ -3,7 +3,8 @@ import {createUserRankTemplate} from "./components/user-rank.js";
 import {createCatalogTemplate} from "./components/catalog.js";
 import {createMovieCardTemplate} from "./components/movie-card.js";
 import {createShowMoreButtonTemplate} from "./components/show-more-button.js";
-import {createMovieDetailsPopupTemplate} from "./components/movie-details.js";
+// import {createMovieDetailsPopupTemplate} from "./components/movie-details.js";
+import {generateFilters} from "./mock/filter.js";
 
 const MOVIES_COUNT = 5;
 const MOVIES_EXTRA_COUNT = 2;
@@ -15,8 +16,10 @@ const render = (container, template, place = `beforeend`) => {
 const siteMainElement = document.querySelector(`.main`);
 const siteHeaderElement = document.querySelector(`.header`);
 
+const filters = generateFilters();
+
 render(siteHeaderElement, createUserRankTemplate());
-render(siteMainElement, createSiteMenuTemplate());
+render(siteMainElement, createSiteMenuTemplate(filters));
 render(siteMainElement, createCatalogTemplate());
 
 const moviesList = siteMainElement.querySelector(`.films-list`);
@@ -35,4 +38,4 @@ for (let i = 0; i < moviesListExtra.length; i++) {
   }
 }
 
-render(siteMainElement, createMovieDetailsPopupTemplate());
+// render(siteMainElement, createMovieDetailsPopupTemplate());
